@@ -6,7 +6,7 @@ export class Pokemon{
         this.id = data.id
         this.name = data.name
         this.nickname = data.nickname
-        this.img = data.img
+        this.img = data.sprites.front_shiny
         this.weight = data.weight
         this.height = data.height
         this.type = data.type
@@ -21,7 +21,7 @@ export class Pokemon{
             <p><b>Nickname:</b> ${this.nickname} | <b>Height:</b> ${this.height} | <b>Weight:</b> ${this.weight}</p>
             <p><b>type:</b> ${this.type}</p>
           </div>
-          <p>${this.img}</p>
+          <img src="${this.img}">
          
       `
       }
